@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+int n,i;
+cout<<"Introduzca el numero:";
+cin>>n;
+for(i=2;i<=n;i=i+2)
+cout<<i<<"\t";
+i=2;
+cout<<"\n";
+while(i<=n)
+   { cout<<i<<"\t";
+     i=i+2;
+   }
+   getch();
+}
