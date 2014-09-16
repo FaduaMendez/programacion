@@ -1,0 +1,42 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main ()
+{float a,b,c,x1,x2,D,x,xr,xi;
+
+	cout<<"Introduzca el valor de a:";
+	cin>>a;
+	if (a==0);
+	{cout<<"error";
+	}
+	else
+	 {
+	 cout<<"Introduzca el valor de b:";
+	 cin>>b;
+	 cout<<"Introduzca el valor de c:";
+	 cin>>c;
+	 D=b*b-4*a*c;
+		if(D>0)
+		{x1=(-b+sqrt(D))/(2*a);
+		 x2=(-b-sqrt(D))/(2*a);
+		 cout<<"la raiz x1 es:"<<x1<< "\ln";
+		 cout<<"la raiz x2 es:"<<x2<< "\ln";
+		}
+		else
+		{if(D<0)
+			{xr=-b/(2*a);
+		     xi=sqrt((-b*b)-4*a*c);
+		     cout<<"la raiz x1 es:"<<xr<<"+"<<xi<<"i";
+			 cout<<"la raiz x2 es:"<<xr<<"-"<<xi<<"i";
+		    }
+			else
+			{x=(-b/(2*a));
+		    cout<<"la raiz unica es: "<<x<<"\n";
+		    }
+		}
+	}
+getch();
+}
