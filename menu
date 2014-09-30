@@ -1,0 +1,98 @@
+// menu.cpp : main project file.
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{ int n,k;
+  float a,b,c,z,h;
+   do
+   {   cout<<"\t MENU \n\n";
+	   cout<<"1.PAR\n";
+	   cout<<"2.IMPAR\n";
+	   cout<<"3.ECUACION CUADRATICA\n";
+	   cout<<"4.VALOR ABSOLUTO\n";
+	   cout<<"5.AREADEL TRIANGULO\n";
+	   cout<<"0.SALIR\n";
+	   cout<<"escoja una opcion:";
+	   cin>>n;
+	   switch(n)
+	   {case 1:cout<<"par\n";
+	           cout<<"Ingrese un numero: ";
+	           cin>>n;
+	           if(n%2==0)
+		          cout<<"es par";
+	           else
+		          cout<<"error";
+	           getch();
+	           break;
+	    case 2:cout<<"impar\n";
+		       cout<<"Ingrese un nùmero: ";
+			   cin>>n;
+			   if(n%2==1)
+				  cout<<"es impar";
+			   else
+				  cout<<"error";
+			   getch();
+			   break;
+		case 3:cout<<"ecuacion cuadrática: ";
+			   cout<<"Ingrese el valor de b:";
+			   cin>>b;
+			   cout<<"Ingrese el valor de a:";
+			   cin>>a;
+			   cout<<"Ingrese el valor de c";
+			   cin>>c;
+			   h>0;	
+			   a!=0;
+			   h=(b*b-4*a*c);
+			   if(h==0)
+			   {z=-b/2*a;
+			   cout<<"la raiz unica es"<<z<<"\n";}
+			   else
+			   {n=(-b+sqrt(h))/2*a;
+			       k=(-b-sqrt(h))/2*a;
+			     
+			     cout<<"la raiz x1: "<<n<<"\n";
+			     cout<<"la raiz x2: "<<h<<"\n";
+			   }
+			   getch();
+			   break;
+
+		case 4:cout<<"Valor absoluto\n";
+			   cout<<"ingrese un numero:";
+			   cin>>n;
+			   if(n<0)
+				   n=n*-1;
+			   cout<<"el valor absoluto es:";
+			   cout<<n;
+			   getch();
+			   break;
+		case 5:cout<<"Area del triangulo\n";
+			   cout<<"Ingrese la base:";
+			   cin>>b;
+			   cout<<"Ingrese la altura";
+			   cin>>h;
+			   a=(b*h)/2;
+			   cout<<"el area es:";
+			   cout<<a;
+			   getch();
+			   break;
+		case 0:cout<<"salir:";
+			   getch();
+			   break;
+		default:
+			cout<<"ERROR\n";
+	   }
+	   system("cls");
+   }while(n!=0);
+   getch();
+}
+
+
+
+
+
