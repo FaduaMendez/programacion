@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{int n,r, re,s=0;
+float e=0;
+cout<<"Ingrese el numero:";
+cin>>n;
+cout<<"Ingrese la base:";
+cin>>r;
+  while (n!=0)
+  { re=n%r;
+  n=n/r;
+  s=s+re*pow(10,e);
+  e++;
+
+  }
+cout<<"Numero convertido: " <<s;
+getch();
+}
