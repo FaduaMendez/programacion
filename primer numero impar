@@ -1,0 +1,25 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{int n,i,re,par;
+cout<<"Ingrese el numero : ";
+cin>>n;
+par=0;
+while(n>0)
+{re=n%10;
+  if(re%2==0)
+   if(re>0)
+     par=re;
+   
+  n=n/10;
+}
+if(par==0)
+cout<<"no tiene numero par";
+else
+cout<<"el numero par es: "<<par;
+getch();
+}
