@@ -1,0 +1,40 @@
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+int factorial (int N);
+float potencia (float x, int y);
+
+void main ()
+{
+	float base,s=0,i;
+	int exponente,f,n;
+	cout<<"Ingrese el numero para calcular factorial";
+	cin>>n;
+	cout<<"Ingrese la base";
+	cin>>base;
+	for(i=2;i<=n;i++)
+	{s=s+(potencia(base,i)/factorial(i));
+	} 
+	cout<<"el resultado es"<<s;
+	 getch();
+}
+
+int factorial (int N)
+{
+	int i,p=1;
+	for (int i=1;i<=N;i++)
+	p=p*i;
+	return p;
+}
+
+float potencia (float x, int y)
+{float pot ;
+pot=1;
+for(int i=1;i<=y;i++)
+pot=pot*x;
+return pot;
+}
