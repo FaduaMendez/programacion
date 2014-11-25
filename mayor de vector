@@ -1,0 +1,55 @@
+
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#define TAM 100
+using namespace std;
+
+void leer_vector(int vec[],int n);
+void mostrar_vector(int vec[],int n);
+int mayor(int vec[],int n);
+
+void main()
+{int n,vec[TAM],a;
+do
+{
+ cout<<"Ingrese el tamaño del vector: ";
+ cin>>n;
+}
+while (n>100||n<0);
+ leer_vector(vec,n);
+ mostrar_vector(vec,n);
+ a=mayor(vec,n);
+ cout<<"El mayor es: "<<a;
+ getch();
+
+}
+
+void leer_vector(int vec[],int n)
+{int i;
+for(i=0;i<n;i++)
+{
+cout<<"Ingrese un valor: ";
+cin>>vec [i];
+}
+getch();
+}
+int mayor(int vec[],int n)
+{int i,aux;
+aux=vec[0];
+for(i=0;i<n;i++)
+{if (vec[i]>aux)
+aux=vec[i];
+}
+return aux;
+}
+
+void mostrar_vector(int vec[],int n)
+{int i;
+for(i=0;i<n;i++)
+{cout<<vec[i];
+cout<<endl;
+}
+getch();
+}
